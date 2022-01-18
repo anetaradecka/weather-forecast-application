@@ -63,7 +63,6 @@ public class MainWindowController extends BaseController implements Initializabl
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
         setUpEmailsTreeView();
         setUpEmailsTableView();
         setUpFolderSelection();
