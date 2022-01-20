@@ -8,5 +8,11 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="javafx-swt" level="project" />
+    <orderEntry type="library" name="jackson-databind-2.9.5" level="project" />
+    <orderEntry type="library" name="jackson-annotations-2.9.0" level="project" />
+    <orderEntry type="library" name="weather-apilib-1.0.0" level="project" />
+    <orderEntry type="library" name="joda-time-2.10.13" level="project" />
+    <orderEntry type="library" name="okhttp-3.9.0" level="project" />
+    <orderEntry type="library" name="okio-1.13.0" level="project" />
   </component>
 </module>
