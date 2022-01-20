@@ -40,14 +40,14 @@
       <TableView fx:id="primaryTableView" layoutX="56.0" layoutY="333.0" prefHeight="200.0" prefWidth="400.0">
         <columns>
           <TableColumn prefWidth="100.0" text="Day" />
-          <TableColumn prefWidth="100.0" text="Temperature" />
+          <TableColumn prefWidth="100.0" text="Temp °C" />
             <TableColumn prefWidth="150.0" text="Condition" />
         </columns>
       </TableView>
       <TableView fx:id="secondaryTableView" layoutX="535.0" layoutY="333.0" prefHeight="200.0" prefWidth="400.0">
          <columns>
             <TableColumn prefWidth="100.0" text="Day" />
-            <TableColumn prefWidth="100.0" text="Temperature" />
+            <TableColumn prefWidth="100.0" text="Temp °C" />
             <TableColumn prefWidth="150.0" text="Condition" />
          </columns>
       </TableView>

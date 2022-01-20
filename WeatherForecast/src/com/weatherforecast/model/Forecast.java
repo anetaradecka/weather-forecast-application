@@ -7,13 +7,11 @@ public class Forecast {
     private SimpleStringProperty date;
     private SimpleDoubleProperty temp;
     private SimpleStringProperty condition;
-    private SimpleStringProperty icon;
 
-    public Forecast(String date, Double temp, String condition, String icon) {
+    public Forecast(String date, Double temp, String condition) {
         this.date = new SimpleStringProperty(date);
         this.temp = new SimpleDoubleProperty(temp);
         this.condition = new SimpleStringProperty(condition);
-        this.icon = new SimpleStringProperty(icon);
     }
 
     public SimpleStringProperty dateProperty() {
@@ -28,7 +26,4 @@ public class Forecast {
         return condition;
     }
 
-    public SimpleStringProperty iconProperty() {
-        return icon;
-    }
 }

@@ -60,8 +60,7 @@ public class MainWindowController extends BaseController implements Initializabl
                     primaryTableViewData.add(new Forecast(
                             day.getDate(),
                             day.getDay().getAvgtempC(),
-                            day.getDay().getCondition().getText(),
-                            day.getDay().getCondition().getIcon()
+                            day.getDay().getCondition().getText()
                     ));
                 }
 
@@ -84,8 +83,7 @@ public class MainWindowController extends BaseController implements Initializabl
                     secondaryTableViewData.add(new Forecast(
                             day.getDate(),
                             day.getDay().getAvgtempC(),
-                            day.getDay().getCondition().getText(),
-                            day.getDay().getCondition().getIcon()
+                            day.getDay().getCondition().getText()
                     ));
                 }
 
