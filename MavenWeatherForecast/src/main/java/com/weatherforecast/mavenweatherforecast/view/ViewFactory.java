@@ -1,5 +1,7 @@
 package com.weatherforecast.mavenweatherforecast.view;
 
+import com.weatherforecast.mavenweatherforecast.controller.BaseController;
+import com.weatherforecast.mavenweatherforecast.controller.MainWindowController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;

@@ -3,6 +3,7 @@ package com.weatherforecast.mavenweatherforecast.controller;
 import com.weatherapi.api.models.Forecastday;
 import com.weatherforecast.mavenweatherforecast.WeatherManager;
 import com.weatherforecast.mavenweatherforecast.model.Forecast;
+import com.weatherforecast.mavenweatherforecast.view.ViewFactory;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
