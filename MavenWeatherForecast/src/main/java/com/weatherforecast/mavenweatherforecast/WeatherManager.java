@@ -10,7 +10,11 @@ public class WeatherManager {
 
     private final String key = "cfb31c2ead9c45b48b9133259221901";
 
-    private final WeatherAPIClient client = new WeatherAPIClient(key);
+    private WeatherAPIClient client = new WeatherAPIClient(key);
+
+    public void setClient (WeatherAPIClient client) {
+        this.client = client;
+    }
 
     public List<Forecastday> getForecast(String cityName) throws Throwable {
         try {

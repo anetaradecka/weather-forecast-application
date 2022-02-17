@@ -1,10 +1,12 @@
-import com.weatherforecast.mavenweatherforecast.controller.MainWindowController;
+package com.weatherforecast.mavenweatherforecast.controller;
+
 import com.weatherforecast.mavenweatherforecast.view.ViewFactory;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -12,6 +14,7 @@ import org.testfx.framework.junit5.ApplicationTest;
 
 //import javax.swing.text.ViewFactory;
 
+@Disabled
 @ExtendWith(MockitoExtension.class)
 public class MainWindowControllerTest extends ApplicationTest {
     // To jest zalecany gotowiec, ale trzeba sie lepiej znac na JUnit

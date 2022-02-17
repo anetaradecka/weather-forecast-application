@@ -1,0 +1,8 @@
+com\weatherforecast\mavenweatherforecast\controller\BaseController.class
+com\weatherforecast\mavenweatherforecast\WeatherManager.class
+com\weatherforecast\mavenweatherforecast\HelloApplication.class
+module-info.class
+com\weatherforecast\mavenweatherforecast\HelloController.class
+com\weatherforecast\mavenweatherforecast\controller\MainWindowController.class
+com\weatherforecast\mavenweatherforecast\view\ViewFactory.class
+com\weatherforecast\mavenweatherforecast\model\Forecast.class
