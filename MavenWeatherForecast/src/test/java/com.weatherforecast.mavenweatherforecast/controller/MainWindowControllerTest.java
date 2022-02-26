@@ -1,53 +1,36 @@
 package com.weatherforecast.mavenweatherforecast.controller;
 
-import com.weatherforecast.mavenweatherforecast.view.ViewFactory;
-import javafx.scene.Scene;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.StackPane;
-import javafx.stage.Stage;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
+import com.weatherforecast.mavenweatherforecast.Launcher;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.junit.jupiter.MockitoExtension;
-import org.testfx.framework.junit5.ApplicationTest;
+import org.testfx.api.FxAssert;
+import org.testfx.api.FxRobot;
+import org.testfx.api.FxToolkit;
+import org.testfx.framework.junit5.ApplicationExtension;
+import org.testfx.matcher.control.LabeledMatchers;
+import org.testfx.util.WaitForAsyncUtils;
 
-//import javax.swing.text.ViewFactory;
 
-@Disabled
-@ExtendWith(MockitoExtension.class)
-public class MainWindowControllerTest extends ApplicationTest {
-    // To jest zalecany gotowiec, ale trzeba sie lepiej znac na JUnit
-    // https://stackoverflow.com/questions/28245555/how-do-you-mock-a-javafx-toolkit-initialization/28416730
+@ExtendWith(ApplicationExtension.class)
+public class MainWindowControllerTest  {
 
-    private TextField fakeTextFieldWithText;
-    private TextField fakeTextFieldWithoutText;
-
-    /**
-     * Will be called with {@code @Before} semantics, i.e. before each test method.
-     */
-    @Override
-    public void start(Stage stage) {
-//        fakeTextFieldWithText = new TextField("Boston");
-//        fakeTextFieldWithoutText = new TextField("");
-        stage.setScene(new Scene(new StackPane(), 100, 100));
-        stage.show();
+    @BeforeEach
+    public void runAppToTests(FxRobot fxRobot) throws Exception {
+        FxToolkit.registerPrimaryStage();
+        FxToolkit.setupApplication(Launcher::new);
+        FxToolkit.showStage();
+        WaitForAsyncUtils.waitForFxEvents();
     }
 
     @Test
-    public void shouldValidatePrimaryTextField() {
+    public void shouldValidatePrimaryTextField(FxRobot fxRobot) {
         //given
-        ViewFactory fakeViewFactory = new ViewFactory();
-        String fakeFxmlName = "";
-        MainWindowController mainWindowController = new MainWindowController(fakeViewFactory, fakeFxmlName);
-//        TextField fakePrimaryTextField = new TextField("Boston");
-        mainWindowController.setPrimaryTextField(fakeTextFieldWithText);
 
-        //when
-        boolean primaryFieldIsValid = mainWindowController.isPrimaryFieldValid();
+        // when
 
-        //then
-        Assertions.assertEquals(fakeTextFieldWithText.getText(), "Boston");
+        // then
+        FxAssert.verifyThat("#primaryTextField", LabeledMatchers.hasText("Hello!"));
     }
 
 }

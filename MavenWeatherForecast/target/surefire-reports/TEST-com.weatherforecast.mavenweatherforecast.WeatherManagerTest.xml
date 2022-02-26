@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.weatherforecast.mavenweatherforecast.controller.MainWindowControllerTest" time="2.928" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.weatherforecast.mavenweatherforecast.WeatherManagerTest" time="4.912" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="javafx.runtime.version" value="12.0.2+1"/>
@@ -59,5 +59,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="shouldValidatePrimaryTextField(FxRobot)" classname="com.weatherforecast.mavenweatherforecast.controller.MainWindowControllerTest" time="2.88"/>
+  <testcase name="shouldGetForecast" classname="com.weatherforecast.mavenweatherforecast.WeatherManagerTest" time="4.903"/>
 </testsuite>
